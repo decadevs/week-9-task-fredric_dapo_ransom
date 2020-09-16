@@ -26,7 +26,15 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
+/**
+ * This is the main activity for the map app
+ */
+
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+
+    /**
+     * All my global variables are initialised here
+     */
 
     private lateinit var map: GoogleMap
     private val LOCATION_PERMISSION_REQUEST = 1
@@ -39,7 +47,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        /**
+         * Obtain the SupportMapFragment and get notified when the map is ready to be used.
+         */
 
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
@@ -75,6 +85,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             )
     }
 
+    /**
+     * Manage the location permission for the app
+     */
 
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<String>,
@@ -142,11 +155,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         else -> super.onOptionsItemSelected(item)
     }
 
+    /**
+     * Get location update from firebase, declare path to save current location
+     */
 
     private fun getLocationUpdates() {
         locationRequest = LocationRequest()
-        locationRequest.interval = 3000
-        locationRequest.fastestInterval = 3000
+        locationRequest.interval = 10000
+        locationRequest.fastestInterval = 20000
         locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
 
         locationCallback = object : LocationCallback() {
@@ -182,6 +198,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+    /**
+     * Seek for all necessary permissions from user if permission wasn't granted on app installation
+     */
 
     private fun startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(
@@ -205,6 +224,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             null
         )
     }
+
+    /**
+     * Update and receive location data from Firestore database of team
+     * Set markers for team mates
+     */
 
     fun getLog(path: String): ValueEventListener {
         val logListener = object : ValueEventListener {
@@ -253,6 +277,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     }
                 }
             }
+
+            /**
+             * Manage Databade error with toast
+             */
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(
