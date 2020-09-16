@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "658027042310",
+    "firebase_url": "https://location-tracker-cb224.firebaseio.com",
+    "project_id": "location-tracker-cb224",
+    "storage_bucket": "location-tracker-cb224.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658027042310:android:5972518f0b2e9eb80cd587",
+        "android_client_info": {
+          "package_name": "com.example.map_app_week_8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9igmAnBeNTJb011YXrz0ssZv68bP8q4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658027042310:android:35e2d444dbdf07b90cd587",
+        "android_client_info": {
+          "package_name": "com.example.trackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9igmAnBeNTJb011YXrz0ssZv68bP8q4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658027042310:android:d5db00daf54817230cd587",
+        "android_client_info": {
+          "package_name": "com.misterjedu.locationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9igmAnBeNTJb011YXrz0ssZv68bP8q4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658027042310-k90gr362upm2es1chia00mcdfaec9sl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
