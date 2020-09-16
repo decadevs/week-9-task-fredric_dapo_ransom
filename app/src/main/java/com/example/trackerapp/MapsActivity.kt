@@ -100,7 +100,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         locationRequest = LocationRequest()
 
         /**interval for receiving location updates**/
-        locationRequest.interval = 10000
+        locationRequest.interval = 20000
 
         /**shortest interval for receiving location callBack**/
         locationRequest.fastestInterval = 10000
